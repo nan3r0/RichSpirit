@@ -34,16 +34,12 @@ body {
 }
 
 .checkbox.checked {
-    background: url("check.gif");
+    background: url("../captcha/check.gif");
 }
 
 .checkbox.load {
-    background: url("load.gif");
+    background: url("../captcha/load.gif");
 }
-
-
-
-
 
 
 .captcha_window {
@@ -61,7 +57,7 @@ canvas.checkmark {
     width: 150px;
     height: 150px;
     border: 1px black solid;
-    background: url("checkmark.png");
+    background: url("../captcha/checkmark.png");
 }
 
 canvas.handwrite {
@@ -69,7 +65,7 @@ canvas.handwrite {
     width: 300px;
     height: 100px;
     border: 1px black solid;
-    background: url("robot-text.png");
+    background: url("../captcha/robot-text.png");
 }
 
 button {

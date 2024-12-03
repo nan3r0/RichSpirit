@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ManualCaptcha</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
+    />
+    <style>
+      h1 {
+        margin-top: 20px;
+        font-family: "Roboto Slab", serif;
+        text-align: center;
+      }
+      p.explanation {
+        text-align: center;
+        margin-top: 20px; /* Adjust margin as needed */
+        font-size: 16px; /* Adjust font size as needed */
+      }
+    </style>
+    <style>
+      /* Style for the hidden link */
+      #pay-link {
+        display: none; /* Hidden initially */
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        font-size: 18px;
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Unlock the door</h1>
+    <p class="explanation">
+      There is a rumour that you might not be human.We need to make sure you are
+      actually one
+    </p>
+    <div class="captcha center">
+      <span class="checkbox"></span>
+      <h2>I'm not a robot</h2>
+    </div>
+
+    <div class="captcha_window center">
+      <h3>Draw a checkmark and handwrite "I'm not a robot" to confirm.</h3>
+      <canvas class="checkmark" width="150" height="150"></canvas>
+      <p class="incorrect">Checkmark incorrectly drawn. Try again.</p>
+      <canvas class="handwrite" width="300" height="100"></canvas><br />
+      <p class="incorrect">I don't really like this handwriting. Try again.</p>
+      <button>Submit</button>
+    </div>
+
+    <a id="pay-link" href="/hallway/hallway.html">
+      Ill paypal you, please let me in this time 🙏
+    </a>
+
+    <script>
+      // JavaScript to show the link after 30 seconds
+      setTimeout(() => {
+        document.getElementById("pay-link").style.display = "block";
+      }, 35000); // 30,000 milliseconds = 30 seconds
+    </script>
+
+    <script src="main.js"></script>
+  </body>
+</html>

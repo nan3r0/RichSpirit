@@ -85,6 +85,6 @@ const timerInterval = setInterval(() => {
 
   if (timeLeft < 0) {
     clearInterval(timerInterval);
-    window.location.href = '/modes/modeselection.html'; // Replace with the actual URL
+    window.location.href = './modes/modeselection.html'; // Replace with the actual URL
   }
 }, 1000);

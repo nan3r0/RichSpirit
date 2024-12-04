@@ -10,7 +10,11 @@
     <h2 class="centered-h2">
       Please scan the QR code to submit your complaint
     </h2>
-    <div class="image-container">
+    <div id="spinner-canvas-container">
+      <canvas id="spinner-canvas" height="300" width="300"></canvas>
+    </div>
+    <div id="progress-num"></div>
+    <div class="image-container" style="display: none">
       <a href="../complaints/frame.png"
         ><img src="../complaints/frame.png" alt="Image 1"
       /></a>

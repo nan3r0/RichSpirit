@@ -77,7 +77,7 @@ var ScrambleKeyboard = function(el, func) {
 
 const timerElement = document.getElementById('timer');
 
-let timeLeft = 20; // Adjust the time in seconds as needed
+let timeLeft = 30; // Adjust the time in seconds as needed
 
 const timerInterval = setInterval(() => {
   timerElement.textContent = `Time remaining: ${timeLeft} seconds`;
